@@ -55,9 +55,23 @@
             color: black;
         }
 
+        .icone { /*usar tamanho minimo de 80px*/
+            width: 125px;
+            height: 125px;
+        }
+
         header {
-            width: 25%;
             height: 100vh;
+
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            gap: 15px;
+
+            padding-right: 15px;
+            padding-left: 15px;
         }
 
         main {
@@ -65,12 +79,46 @@
             height: 100vh;
 
             overflow: auto;
-        } 
+        }
+
+        .bloco-icone {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+        }
     </style>
     <!-- FIM DA ESTILIZAÇÃO -->
 </head>
 <body>
-    <header>Barra vertical com icones de navegação</header>
+    <header>
+        <a href="#">
+            <div class="bloco-icone">
+                <img src="image/conv - 1 - who am i.png" alt="Icone quem sou eu" class="icone">
+                <span class="link">Quem sou eu</span>
+            </div>
+        </a>
+        <a href="#">
+            <div class="bloco-icone">
+                <img src="image/conv - 2 - tecnologies.png" alt="Icone das tecnologias que eu utilizo" class="icone">
+                <span class="link">Tecnologias</span>
+            </div>
+        </a>
+        <a href="#">
+            <div class="bloco-icone">
+                <img src="image/conv - 3 - softwares.png" alt="Icone dos softwares que utilizo" class="icone">
+                <span class="link">Ferramentas</span>
+            </div>
+        </a>
+        <a href="#">
+            <div class="bloco-icone">
+                <img src="image/conv - 4 - curriculum.png" alt="Icone de contato e curriculo" class="icone">
+                <span class="link">Contato</span>
+            </div>
+        </a>
+    </header>
     <main>
         <p>Conteudo principal</p>
         <p>Conteudo principal</p>
