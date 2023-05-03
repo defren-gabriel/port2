@@ -79,6 +79,8 @@
             height: 100vh;
 
             overflow: auto;
+
+            padding-right: 15px;
         }
 
         .bloco-icone {
@@ -89,30 +91,78 @@
             align-items: center;
             gap: 0;
         }
+
+        #quemsoueu {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 12px;
+        }
+
+        #quemsoueu p {
+            text-align: justify;
+        }
+
+        #quemsoueu img {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        #eusimeumesmo {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0;
+        }
+
+
+        @media screen and (max-width: 1280px) {
+            .icone { 
+                width: 90px;
+                height: 90px;
+            }
+            
+        }
+
+        @media screen and (max-width: 800px) {
+            .icone { 
+                width: 60px;
+                height: 60px;
+            }
+
+            a .bloco-icone span {
+                display: none;
+            }
+
+        }
     </style>
     <!-- FIM DA ESTILIZAÇÃO -->
 </head>
 <body>
     <header>
-        <a href="#">
+        <a href="#quemsoueu">
             <div class="bloco-icone">
                 <img src="image/conv - 1 - who am i.png" alt="Icone quem sou eu" class="icone">
                 <span class="link">Quem sou eu</span>
             </div>
         </a>
-        <a href="#">
+        <a href="#teste1">
             <div class="bloco-icone">
                 <img src="image/conv - 2 - tecnologies.png" alt="Icone das tecnologias que eu utilizo" class="icone">
                 <span class="link">Tecnologias</span>
             </div>
         </a>
-        <a href="#">
+        <a href="#teste2">
             <div class="bloco-icone">
                 <img src="image/conv - 3 - softwares.png" alt="Icone dos softwares que utilizo" class="icone">
                 <span class="link">Ferramentas</span>
             </div>
         </a>
-        <a href="#">
+        <a href="#teste3">
             <div class="bloco-icone">
                 <img src="image/conv - 4 - curriculum.png" alt="Icone de contato e curriculo" class="icone">
                 <span class="link">Contato</span>
@@ -120,78 +170,200 @@
         </a>
     </header>
     <main>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
-        <p>Conteudo principal</p>
+        <section id="quemsoueu">
+            <h1 class="titulo">Quem sou eu</h1>
+            <p class="texto">Meu nome é Gabriel Fernandes, eu trabalho com computadores desde antes de entrar na graduação de Engenharia de Computação em 2004, meu foco principal sempre foi desenvolvimento de software e lógica de programação, me formei e comecei a trabalhar na DIP Produtos Artesanais até 2017 quando precisei sai pra cuidar dos meus pais, desde então estou fazendo diversos cursos de atualização para voltar ao mercado de trabalho.</p>
+            <picture id="eusimeumesmo">
+                <img src="image/eu.jpg" alt="Eu, sim eu mesmo">
+                <span class="texto">Eu, sim eu mesmo</span>
+            </picture>
+        </section>
+        <section id="teste1">
+            <p>TESTE1 TESTE1</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+        </section>
+        <section id="teste2">
+            <p>TESTE2 TESTE2</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+        </section>
+        <section id="teste3">
+            <p>TESTE3 TESTE3</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+            <p>asda sda sda sd aadas dasd dadd</p>
+        </section>
     </main>
 </body>
 </html>
