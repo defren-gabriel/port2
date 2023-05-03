@@ -60,6 +60,8 @@
             height: 125px;
         }
 
+
+
         header {
             height: 100vh;
 
@@ -68,10 +70,14 @@
             flex-direction: column;
             justify-content: center;
             /* align-items: center; */
-            gap: 15px;
+            gap: 25px;
 
             padding-right: 15px;
             padding-left: 15px;
+        }
+
+        header a div span {
+            text-align: center;
         }
 
         main {
@@ -83,6 +89,8 @@
             padding-right: 15px;
         }
 
+
+
         .bloco-icone {
             display: flex;
             flex-wrap: nowrap;
@@ -92,6 +100,8 @@
             gap: 0;
         }
 
+
+        /* PRIMEIRA SEÇÃO DA PAGINA */
         #quemsoueu {
             display: flex;
             flex-wrap: nowrap;
@@ -118,9 +128,11 @@
             align-items: center;
             gap: 0;
         }
+        /* fIM DA PRIMEIRA SEÇÃO DA PAGINA */
 
 
-        @media screen and (max-width: 1280px) {
+
+        @media screen and (max-width: 1000px) {
             .icone { 
                 width: 90px;
                 height: 90px;
@@ -128,7 +140,7 @@
             
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 600px) {
             .icone { 
                 width: 60px;
                 height: 60px;
@@ -153,13 +165,13 @@
         <a href="#teste1">
             <div class="bloco-icone">
                 <img src="image/conv - 2 - tecnologies.png" alt="Icone das tecnologias que eu utilizo" class="icone">
-                <span class="link">Tecnologias</span>
+                <span class="link">Tecnologias que utilizo</span>
             </div>
         </a>
         <a href="#teste2">
             <div class="bloco-icone">
                 <img src="image/conv - 3 - softwares.png" alt="Icone dos softwares que utilizo" class="icone">
-                <span class="link">Ferramentas</span>
+                <span class="link">Ferramentas que utilizo</span>
             </div>
         </a>
         <a href="#teste3">
