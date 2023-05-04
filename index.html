@@ -55,7 +55,7 @@
             color: black;
         }
 
-        .icone { /*usar tamanho minimo de 80px*/
+        .icone { 
             width: 125px;
             height: 125px;
         }
@@ -69,11 +69,12 @@
             flex-wrap: nowrap;
             flex-direction: column;
             justify-content: center;
-            /* align-items: center; */
             gap: 25px;
 
             padding-right: 15px;
             padding-left: 15px;
+
+            border-right: 1px solid black;
         }
 
         header a div span {
@@ -87,6 +88,7 @@
             overflow: auto;
 
             padding-right: 15px;
+            padding-left: 15px;
         }
 
 
@@ -108,7 +110,11 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
+        }
+
+        #quemsoueu h1 {
+            margin-bottom: 40px;
         }
 
         #quemsoueu p {
@@ -128,7 +134,38 @@
             align-items: center;
             gap: 0;
         }
-        /* fIM DA PRIMEIRA SEÇÃO DA PAGINA */
+        /* FIM DA PRIMEIRA SEÇÃO DA PAGINA */
+
+        /* SEGUNDA SEÇÃO DA PAGINA */
+        #tech {
+            margin-top: 75px;
+        }
+
+        #tech h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #tecnologias {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        #tecnologias div img {
+            width: 125px;
+            height: 150px;
+        }
+
+        .tecnologias-bloco {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+        }
+        /* FIM DA SEGUNDA SEÇÃO DA PAGINA */
 
 
 
@@ -137,7 +174,22 @@
                 width: 90px;
                 height: 90px;
             }
-            
+
+            #tecnologias {
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+            }
+
+            #tecnologias div img {
+                width: 90px;
+                height: 125px;
+            }  
+
+            .tecnologias-bloco {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
 
         @media screen and (max-width: 600px) {
@@ -148,6 +200,11 @@
 
             a .bloco-icone span {
                 display: none;
+            }
+
+            #tecnologias {
+                grid-template-columns: 1fr;
+                gap: 25px;
             }
 
         }
@@ -162,7 +219,7 @@
                 <span class="link">Quem sou eu</span>
             </div>
         </a>
-        <a href="#teste1">
+        <a href="#tech">
             <div class="bloco-icone">
                 <img src="image/conv - 2 - tecnologies.png" alt="Icone das tecnologias que eu utilizo" class="icone">
                 <span class="link">Tecnologias que utilizo</span>
@@ -190,67 +247,26 @@
                 <span class="texto">Eu, sim eu mesmo</span>
             </picture>
         </section>
-        <section id="teste1">
-            <p>TESTE1 TESTE1</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
+        <section id="tech">
+            <h1 class="titulo">Tecnologias que eu utilizo no dia a dia</h1>
+            <div id="tecnologias">
+                <div class="tecnologias-bloco">
+                    <img src="image/html5-logo.png" alt="HTML 5, a base para a pagina Web">
+                    <p class="texto">O HTML 5 é uma linguagem de marcação para páginas. <a href="https://pt.wikipedia.org/wiki/HTML" target="_blank" class="link">Saiba mais aqui</a></p>
+                </div>
+                <div class="tecnologias-bloco">
+                    <img src="image/css3-logo.png" alt="CSS 3, o que aplica estilos ao conteudo HTML 5">
+                    <p class="texto">O CSS 3 aplica às paginas Web os estilos mais atuais. <a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" class="link">Saiba mais aqui</a></p>
+                </div>
+                <div class="tecnologias-bloco">
+                    <img src="image/javascript-logo.png" alt="JavaScript, o que faz a pagina ganhar comportamento">
+                    <p class="texto">O JavaScript da às páginas Web o comportamento. <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank" class="link">Saiba mais aqui</a></p>
+                </div>
+                <div class="tecnologias-bloco">
+                    <img src="image/reactjs-logo.png" alt="React, uma biblioteca usada para criar interfaces de usuario">
+                    <p class="texto">O React permite a criação de interfaces avançadas. <a href="https://pt.wikipedia.org/wiki/React_(JavaScript)" target="_blank" class="link">Saiba mais aqui</a></p>
+                </div>
+            </div>
         </section>
         <section id="teste2">
             <p>TESTE2 TESTE2</p>
