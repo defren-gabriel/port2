@@ -43,7 +43,8 @@
         .titulo {
             font-family: 'Roboto Condensed', sans-serif;
             color: black;
-            font-size: 2em;
+            /* font-size: 2em; */
+            text-align: center;
         }
 
         .texto {
@@ -173,6 +174,43 @@
         }
         /* FIM DA SEGUNDA SEÇÃO DA PAGINA */
 
+        /* TERCEIRA SEÇÃO DA PAGINA */
+        #soft h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #softwares {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 25px;
+            column-gap: 10px;
+        }
+
+        #softwares div img {
+            width: 125px;
+            height: 150px;
+        }
+
+        .softwares-bloco {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .softwares-bloco2 {
+            height: 100%;
+
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        /* FIM DA TERCEIRA SEÇÃO DA PAGINA */
+
 
 
         @media screen and (max-width: 1000px) {
@@ -196,6 +234,22 @@
                 justify-content: space-between;
                 align-items: center;
             }
+
+            #softwares {
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+            }
+
+            #softwares div img {
+                width: 90px;
+                height: 125px;
+            }  
+
+            .softwares-bloco {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
 
         @media screen and (max-width: 600px) {
@@ -213,6 +267,10 @@
                 gap: 25px;
             }
 
+            #softwares {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
         }
     </style>
     <!-- FIM DA ESTILIZAÇÃO -->
@@ -231,7 +289,7 @@
                 <span class="link">Tecnologias que utilizo</span>
             </div>
         </a>
-        <a href="#teste2">
+        <a href="#soft">
             <div class="bloco-icone">
                 <img src="image/conv - 3 - softwares.png" alt="Icone dos softwares que utilizo" class="icone">
                 <span class="link">Ferramentas que utilizo</span>
@@ -274,67 +332,45 @@
                 </div>
             </div>
         </section>
-        <section id="teste2" class="espacamento">
-            <p>TESTE2 TESTE2</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
-            <p>asda sda sda sd aadas dasd dadd</p>
+        <section id="soft" class="espacamento">
+            <h1 class="titulo">Softwares que eu utilizo no desenvolvimento</h1>
+            <div id="softwares">
+                <div class="softwares-bloco">
+                    <img src="image/vscode-logo.png" alt="Visual Studio Code um excelente editor de codigo">
+                    <div class="softwares-bloco2">
+                        <h2 class="titulo">Visual Studio Code</h2>
+                        <p class="texto">Visual Studio Code é um editor de texto open source muito utilizado devido à sua versatilidade e plugins disponíveis. <a href="https://code.visualstudio.com/" target="_blank" class="link">Saiba mais aqui</a></p>
+                    </div>
+                </div>
+                <div class="softwares-bloco">
+                    <img src="image/dia-logo.png" alt="Dia é um editor de diagramas muito utilizado">
+                    <div class="softwares-bloco2">
+                        <h2 class="titulo">Dia - Editor de diagramas</h2>
+                        <p class="texto">É um editor de diagramas que me ajuda a entender o que devo fazer em algumas situações. <a href="http://dia-installer.de/" target="_blank" class="link">Saiba mais aqui</a></p>
+                    </div>
+                </div>
+                <div class="softwares-bloco">
+                    <img src="image/gimp-logo.png" alt="GIMP, um editor de imagens">
+                    <div class="softwares-bloco2">
+                        <h2 class="titulo">GIMP</h2>
+                        <p class="texto">O GIMP é um manipulador e editor de imagens open source. <a href="https://www.gimp.org/" target="_blank" class="link">Saiba mais aqui</a></p>
+                    </div>
+                </div>
+                <div class="softwares-bloco">
+                    <img src="image/inkscape-logo.png" alt="Inkscape, um editor de desenho vetorial">
+                    <div class="softwares-bloco2">
+                        <h2 class="titulo">Inkscape</h2>
+                        <p class="texto">É uma ferramenta de desenho vetorial open source com suporte a SVG. <a href="https://inkscape.org/pt-br/" target="_blank" class="link">Saiba mais aqui</a></p>
+                    </div>
+                </div>
+                <div class="softwares-bloco">
+                    <img src="image/git-logo.png" alt="Git, um sistema para versionamento de codigo">
+                    <div class="softwares-bloco2">
+                        <h2 class="titulo">Git</h2>
+                        <p class="texto">O Git é um sistema de versionamento de código, ajuda na organização do desenvolvimento. <a href="https://pt.wikipedia.org/wiki/Git" target="_blank" class="link">Saiba mais aqui</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="teste3">
             <p>TESTE3 TESTE3</p>
