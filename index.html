@@ -43,7 +43,6 @@
         .titulo {
             font-family: 'Roboto Condensed', sans-serif;
             color: black;
-            /* font-size: 2em; */
             text-align: center;
         }
 
@@ -56,11 +55,6 @@
             font-family: 'Roboto Condensed', sans-serif;
             color: black;
             text-decoration: none;
-        }
-
-        .icone { 
-            width: 125px;
-            height: 125px;
         }
 
         h1 {
@@ -86,9 +80,29 @@
             padding-left: 15px;
         }
 
-        header a div span {
+        header a {
+            text-decoration: none;
+        }
+
+        .bloco-icone {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+        }
+
+        .bloco-icone img {
+            width: 125px;
+            height: 125px;
+        }
+
+        .bloco-icone span {
             text-align: center;
         }
+
+
 
         main {
             flex-grow: 1;
@@ -100,24 +114,9 @@
             padding-left: 15px;
         }
 
-
-
-        .bloco-icone {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 0;
-        }
-
-
-
         .espacamento {
             margin-bottom: 100px;
         }
-
-
 
         /* PRIMEIRA SEÇÃO DA PAGINA */
         #quemsoueu {
@@ -155,7 +154,6 @@
 
         /* SEGUNDA SEÇÃO DA PAGINA */
         #tech h1 {
-            text-align: center;
             margin-bottom: 50px;
         }
 
@@ -186,7 +184,6 @@
 
         /* TERCEIRA SEÇÃO DA PAGINA */
         #soft h1 {
-            text-align: center;
             margin-bottom: 50px;
         }
 
@@ -256,7 +253,7 @@
 
 
         @media screen and (max-width: 1000px) {
-            .icone { 
+            .bloco-icone img {
                 width: 90px;
                 height: 90px;
             }
@@ -303,7 +300,7 @@
         }
 
         @media screen and (max-width: 600px) {
-            .icone { 
+            .bloco-icone img {
                 width: 60px;
                 height: 60px;
             }
@@ -333,25 +330,25 @@
     <header>
         <a href="#quemsoueu">
             <div class="bloco-icone">
-                <img src="image/conv - 1 - who am i.png" alt="Icone quem sou eu" class="icone">
+                <img src="image/conv - 1 - who am i.png" alt="Icone quem sou eu">
                 <span class="link">Quem sou eu</span>
             </div>
         </a>
         <a href="#tech">
             <div class="bloco-icone">
-                <img src="image/conv - 2 - tecnologies.png" alt="Icone das tecnologias que eu utilizo" class="icone">
+                <img src="image/conv - 2 - tecnologies.png" alt="Icone das tecnologias que eu utilizo">
                 <span class="link">Tecnologias que utilizo</span>
             </div>
         </a>
         <a href="#soft">
             <div class="bloco-icone">
-                <img src="image/conv - 3 - softwares.png" alt="Icone dos softwares que utilizo" class="icone">
+                <img src="image/conv - 3 - softwares.png" alt="Icone dos softwares que utilizo">
                 <span class="link">Ferramentas que utilizo</span>
             </div>
         </a>
         <a href="#contato">
             <div class="bloco-icone">
-                <img src="image/conv - 4 - curriculum.png" alt="Icone de contato e curriculo" class="icone">
+                <img src="image/conv - 4 - curriculum.png" alt="Icone de contato e curriculo">
                 <span class="link">Contato</span>
             </div>
         </a>
