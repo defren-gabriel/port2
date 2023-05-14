@@ -1,0 +1,32 @@
+/* codigo aqui */
+main {
+    flex-grow: 1;
+    height: 100vh;
+
+    overflow: auto;
+
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.espacamento {
+    margin-bottom: 100px;
+}
+
+.espacamento2 {
+    margin-bottom: 35px;
+}
+
+.bloco {
+    display: block;
+}
+
+
+/* CONFIGURAÇÃO MOBILE */
+@media screen and (max-width: 1000px){
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}

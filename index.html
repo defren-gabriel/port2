@@ -7,7 +7,7 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <title>Pagina principal - Dev Front End - Gabriel</title>
+    <title>Pagina do Gabriel</title>
 
     <!-- fontes do site para titulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,337 +22,41 @@
     <!-- font-family: 'Cabin Condensed', sans-serif; -->
 
     <!-- ESTILIZAÇÃO -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            max-width: 1280px;
-            margin: auto;
-
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            justify-content: flex-start;
-            gap: 0;
-        }
-
-        .titulo {
-            font-family: 'Roboto Condensed', sans-serif;
-            color: black;
-            text-align: center;
-        }
-
-        .texto {
-            font-family: 'Cabin Condensed', sans-serif;
-            color: black;
-        }
-
-        .link {
-            font-family: 'Roboto Condensed', sans-serif;
-            color: black;
-            text-decoration: none;
-        }
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 1.75em;
-        }
-
-
-
-        header {
-            height: 100vh;
-
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: center;
-            gap: 25px;
-
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-
-        header a {
-            text-decoration: none;
-        }
-
-        .bloco-icone {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 0;
-        }
-
-        .bloco-icone img {
-            width: 125px;
-            height: 125px;
-        }
-
-        .bloco-icone span {
-            text-align: center;
-        }
-
-
-
-        main {
-            flex-grow: 1;
-            height: 100vh;
-
-            overflow: auto;
-
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-
-        .espacamento {
-            margin-bottom: 100px;
-        }
-
-        /* PRIMEIRA SEÇÃO DA PAGINA */
-        #quemsoueu {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 10px;
-        }
-
-        #quemsoueu h1 {
-            margin-bottom: 40px;
-            margin-top: 25px;
-        }
-
-        #quemsoueu p {
-            text-align: justify;
-        }
-
-        #quemsoueu img {
-            max-width: 600px;
-            width: 100%;
-        }
-
-        #eusimeumesmo {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 0;
-        }
-        /* FIM DA PRIMEIRA SEÇÃO DA PAGINA */
-
-        /* SEGUNDA SEÇÃO DA PAGINA */
-        #tech h1 {
-            margin-bottom: 50px;
-        }
-
-        #tecnologias {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-        }
-
-        #tecnologias div img {
-            width: 125px;
-            height: 150px;
-        }
-
-        .tecnologias-bloco {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .tecnologias-bloco p {
-            text-align: justify;
-        }
-        /* FIM DA SEGUNDA SEÇÃO DA PAGINA */
-
-        /* TERCEIRA SEÇÃO DA PAGINA */
-        #soft h1 {
-            margin-bottom: 50px;
-        }
-
-        #softwares {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            row-gap: 25px;
-            column-gap: 10px;
-        }
-
-        #softwares div img {
-            width: 125px;
-            height: 150px;
-        }
-
-        .softwares-bloco {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .softwares-bloco2 {
-            height: 100%;
-
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: flex-start;
-            gap: 15px;
-        }
-
-        .softwares-bloco2 p {
-            text-align: justify;
-        }
-        /* FIM DA TERCEIRA SEÇÃO DA PAGINA */
-
-        /* QUARTA SEÇÃO DA PAGINA */
-        #contato h1 {
-            margin-bottom: 50px;
-        }
-
-        .bloco {
-            display: block;
-        }
-
-        .contato-bloco * {
-            text-align: justify;
-        }
-
-        .contato-bloco h2 {
-            margin-bottom: 25px;
-            text-align: left;
-        }
-
-        .contato-bloco ul li {
-            margin-left: 50px;
-        }
-
-        .contato-bloco-final {
-            margin-bottom: 15px;
-        }
-        /* FIM DA QUARTA SEÇÃO DA PÁGINA */
-
-
-
-        @media screen and (max-width: 1000px) {
-            .bloco-icone img {
-                width: 90px;
-                height: 90px;
-            }
-
-            h1 {
-                font-size: 1.75em;
-            }
-
-            h2 {
-                font-size: 1.25em;
-            }
-
-            #tecnologias {
-                grid-template-columns: 1fr 1fr;
-                gap: 25px;
-            }
-
-            #tecnologias div img {
-                width: 90px;
-                height: 125px;
-            }  
-
-            .tecnologias-bloco {
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            #softwares {
-                grid-template-columns: 1fr 1fr;
-                gap: 25px;
-            }
-
-            #softwares div img {
-                width: 90px;
-                height: 125px;
-            }  
-
-            .softwares-bloco {
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .bloco-icone img {
-                width: 60px;
-                height: 60px;
-            }
-
-            a .bloco-icone span {
-                display: none;
-            }
-
-            #tecnologias {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-
-            #softwares {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-
-            .contato-bloco ul li {
-                margin-left: 35px;
-            }
-        }
-    </style>
-    <!-- FIM DA ESTILIZAÇÃO -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/secao1-quemsoueu.css">
+    <link rel="stylesheet" href="styles/secao2-tech.css">
+    <link rel="stylesheet" href="styles/secao3-soft.css">
+    <link rel="stylesheet" href="styles/secao4-contato.css">
 </head>
 <body>
-    <header>
+    <nav>
         <a href="#quemsoueu">
-            <div class="bloco-icone">
+            <div>
                 <img src="image/conv - 1 - who am i.png" alt="Icone quem sou eu">
                 <span class="link">Quem sou eu</span>
             </div>
         </a>
         <a href="#tech">
-            <div class="bloco-icone">
+            <div>
                 <img src="image/conv - 2 - tecnologies.png" alt="Icone das tecnologias que eu utilizo">
                 <span class="link">Tecnologias que utilizo</span>
             </div>
         </a>
         <a href="#soft">
-            <div class="bloco-icone">
+            <div>
                 <img src="image/conv - 3 - softwares.png" alt="Icone dos softwares que utilizo">
                 <span class="link">Ferramentas que utilizo</span>
             </div>
         </a>
         <a href="#contato">
-            <div class="bloco-icone">
+            <div>
                 <img src="image/conv - 4 - curriculum.png" alt="Icone de contato e curriculo">
                 <span class="link">Contato</span>
             </div>
         </a>
-    </header>
+    </nav>
     <main>
         <section id="quemsoueu" class="espacamento">
             <h1 class="titulo">Quem sou eu</h1>
@@ -365,19 +69,19 @@
         <section id="tech" class="espacamento">
             <h1 class="titulo">Tecnologias que eu utilizo no dia a dia</h1>
             <div id="tecnologias">
-                <div class="tecnologias-bloco">
+                <div>
                     <img src="image/html5-logo.png" alt="HTML 5, a base para a pagina Web">
                     <p class="texto">O HTML 5 é uma linguagem de marcação para páginas. <a href="https://pt.wikipedia.org/wiki/HTML" target="_blank" class="link">Saiba mais aqui</a></p>
                 </div>
-                <div class="tecnologias-bloco">
+                <div>
                     <img src="image/css3-logo.png" alt="CSS 3, o que aplica estilos ao conteudo HTML 5">
                     <p class="texto">O CSS 3 aplica às paginas Web os estilos mais atuais. <a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" class="link">Saiba mais aqui</a></p>
                 </div>
-                <div class="tecnologias-bloco">
+                <div>
                     <img src="image/javascript-logo.png" alt="JavaScript, o que faz a pagina ganhar comportamento">
                     <p class="texto">O JavaScript da às páginas Web o comportamento. <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank" class="link">Saiba mais aqui</a></p>
                 </div>
-                <div class="tecnologias-bloco">
+                <div>
                     <img src="image/reactjs-logo.png" alt="React, uma biblioteca usada para criar interfaces de usuario">
                     <p class="texto">O React permite a criação de interfaces avançadas. <a href="https://pt.wikipedia.org/wiki/React_(JavaScript)" target="_blank" class="link">Saiba mais aqui</a></p>
                 </div>
@@ -386,37 +90,37 @@
         <section id="soft" class="espacamento">
             <h1 class="titulo">Softwares que eu utilizo no desenvolvimento</h1>
             <div id="softwares">
-                <div class="softwares-bloco">
+                <div>
                     <img src="image/vscode-logo.png" alt="Visual Studio Code um excelente editor de codigo">
-                    <div class="softwares-bloco2">
+                    <div>
                         <h2 class="titulo">VS Code</h2>
                         <p class="texto">Visual Studio Code é um editor de texto open source muito utilizado devido à sua versatilidade e plugins disponíveis. <a href="https://code.visualstudio.com/" target="_blank" class="link">Saiba mais aqui</a></p>
                     </div>
                 </div>
-                <div class="softwares-bloco">
+                <div>
                     <img src="image/dia-logo.png" alt="Dia é um editor de diagramas muito utilizado">
-                    <div class="softwares-bloco2">
+                    <div>
                         <h2 class="titulo">Dia</h2>
                         <p class="texto">É um editor de diagramas que me ajuda a entender o que devo fazer em algumas situações. <a href="http://dia-installer.de/" target="_blank" class="link">Saiba mais aqui</a></p>
                     </div>
                 </div>
-                <div class="softwares-bloco">
+                <div>
                     <img src="image/gimp-logo.png" alt="GIMP, um editor de imagens">
-                    <div class="softwares-bloco2">
+                    <div>
                         <h2 class="titulo">GIMP</h2>
                         <p class="texto">O GIMP é um manipulador e editor de imagens open source. <a href="https://www.gimp.org/" target="_blank" class="link">Saiba mais aqui</a></p>
                     </div>
                 </div>
-                <div class="softwares-bloco">
+                <div>
                     <img src="image/inkscape-logo.png" alt="Inkscape, um editor de desenho vetorial">
-                    <div class="softwares-bloco2">
+                    <div>
                         <h2 class="titulo">Inkscape</h2>
                         <p class="texto">É uma ferramenta de desenho vetorial open source com suporte a SVG. <a href="https://inkscape.org/pt-br/" target="_blank" class="link">Saiba mais aqui</a></p>
                     </div>
                 </div>
-                <div class="softwares-bloco">
+                <div>
                     <img src="image/git-logo.png" alt="Git, um sistema para versionamento de codigo">
-                    <div class="softwares-bloco2">
+                    <div>
                         <h2 class="titulo">Git</h2>
                         <p class="texto">O Git é um sistema de versionamento de código, ajuda na organização do desenvolvimento. <a href="https://pt.wikipedia.org/wiki/Git" target="_blank" class="link">Saiba mais aqui</a></p>
                     </div>
@@ -425,17 +129,17 @@
         </section>
         <section id="contato">
             <h1 class="titulo">Meu currículo</h1>
-            <div class="contato-bloco">
+            <div>
                 <b class="texto bloco">Gabriel Fernandes Seguro Filho</b>
                 <b class="texto bloco">Rua Amazonas Nº 332, Valentim Gentil, São Paulo</b>
                 <b class="texto bloco">15 de abril de 1987</b>
                 <b class="texto bloco">Solteiro</b>
                 <b class="texto bloco">defren.gabriel@gmail.com</b>
-                <b class="texto bloco contato-bloco-final">(17) 9-9197 0204</b>
+                <b class="texto bloco espacamento2">(17) 9-9197 0204</b>
 
                 <h2 class="titulo">Objetivo:</h2>
                 <ul>
-                    <li class="texto contato-bloco-final">Desenvolvedor Front End</li>
+                    <li class="texto espacamento2">Desenvolvedor Front End</li>
                 </ul>
 
                 <h2 class="titulo">Qualificações:</h2>
@@ -444,29 +148,29 @@
                     <li class="texto">Experiência com as Linguagens de Marcação HTML 5 e Estilização CSS 3.</li>
                     <li class="texto">Experiência com Sistemas Operacionais Windows e Linux.</li>
                     <li class="texto">Experiência com Git e versionamento de arquivos.</li>
-                    <li class="texto contato-bloco-final">Experiência com Manutenção de Computadores Desktop.</li>
+                    <li class="texto espacamento2">Experiência com Manutenção de Computadores Desktop.</li>
                 </ul>
 
                 <h2 class="titulo">Experiência Profissional:</h2>
-                <b class="texto">Empresa: </b><span class="texto cor-texto-1 fonte-texto-1">DIP Produtos Artesanais.</span><br>
-                <b class="texto">Período: </b><span class="texto cor-texto-1 fonte-texto-1">De dezembro de 2009 até maio de 2017.</span><br>
-                <b class="texto">Vaga: </b><span class="texto cor-texto-1 fonte-texto-1">Suporte Técnico.</span><br>
-                <b class="texto">Funções: </b><span class="texto cor-texto-1 fonte-texto-1">Manter computadores e rede funcionando, orientar funcionários com relação a utilização de sistemas operacionais e programas.</span><br>
+                <span class="texto"><b class="texto">Empresa: </b>DIP Produtos Artesanais.</span>
+                <span class="texto"><b class="texto">Período: </b>De dezembro de 2009 até maio de 2017.</span>
+                <span class="texto"><b class="texto">Vaga: </b>Suporte Técnico.</span>
+                <span class="texto"><b class="texto">Funções: </b>Manter computadores e rede funcionando, orientar funcionários com relação a utilização de sistemas operacionais e programas.</span>
                 <b class="texto">Resultados: </b>
                 <ul>
                     <li class="texto">Um dos responsáveis pela migração do sistema operacional Windows 7 para Windows 10 em todas as máquinas o que reduziu os gastos com ferramentas de segurança.</li>
-                    <li class="texto contato-bloco-final">Um dos responsáveis pela substituição dos HDs da empresa por SSDs melhorando o ambiente de trabalho e agilizando as tarefas.</li>
+                    <li class="texto espacamento2">Um dos responsáveis pela substituição dos HDs da empresa por SSDs melhorando o ambiente de trabalho e agilizando as tarefas.</li>
                 </ul>
 
                 <h2 class="titulo">Formação Profissional:</h2>
                 <ul>
-                    <li class="texto contato-bloco-final">Bacharelado em Engenharia de Computação, UNIFEV – Centro Universitário de Votuporanga.</li>
+                    <li class="texto espacamento2">Bacharelado em Engenharia de Computação, UNIFEV – Centro Universitário de Votuporanga.</li>
                 </ul>
 
                 <h2 class="titulo">Idiomas:</h2>
                 <ul>
                     <li class="texto">Português nativo do Brasil</li>
-                    <li class="texto contato-bloco-final">Inglês intermediário.</li>
+                    <li class="texto espacamento2">Inglês intermediário.</li>
                 </ul>
 
                 <h2 class="titulo">Cursos:</h2>

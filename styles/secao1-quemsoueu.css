@@ -1,0 +1,42 @@
+#quemsoueu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#quemsoueu h1 {
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+
+#quemsoueu p {
+    text-align: justify;
+}
+
+#quemsoueu picture img {
+    max-width: 600px;
+    width: 100%;
+}
+
+#eusimeumesmo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+
+
+
+/* CONFIGURAÇÃO MOBILE */
+@media screen and (max-width: 1000px){
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}

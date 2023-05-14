@@ -1,0 +1,55 @@
+/* codigo aqui */
+#tech h1 {
+    margin-bottom: 50px;
+}
+
+#tecnologias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#tecnologias div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+#tecnologias div img {
+    width: 125px;
+    height: 150px;
+}
+
+#tecnologias div p {
+    text-align: justify;
+}
+
+
+/* CONFIGURAÇÃO MOBILE */
+@media screen and (max-width: 1000px){
+    #tecnologias {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    #tecnologias div {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #tecnologias div img {
+        width: 90px;
+        height: 125px;
+    }  
+}
+
+@media screen and (max-width: 600px) {
+    #tecnologias {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}

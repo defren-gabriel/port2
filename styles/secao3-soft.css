@@ -1,0 +1,66 @@
+/* codigo aqui */
+#soft h1 {
+    margin-bottom: 50px;
+}
+
+#softwares {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 10px;
+}
+
+#softwares div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+#softwares div img {
+    width: 125px;
+    height: 125px;
+}
+
+#softwares div div {
+    height: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+#softwares div div p {
+    text-align: justify;
+}
+
+
+/* CONFIGURAÇÃO MOBILE */
+@media screen and (max-width: 1000px){
+    #softwares {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    #softwares div img {
+        width: 90px;
+        height: 90px;
+    }  
+
+    #softwares div {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #softwares {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
