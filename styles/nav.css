@@ -45,11 +45,33 @@ nav a div span {
 
 @media screen and (max-width: 600px) {
     nav a div img {
-                width: 60px;
-                height: 60px;
-            }
+        width: 60px;
+        height: 60px;
+    }
 
-            nav a div span {
-                display: none;
-            }
+    nav a div span {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    nav a div img {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav a div span {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    nav a div img {
+        width: 45px;
+        height: 45px;
+    }
+
+    nav a div span {
+        display: none;
+    }
 }
